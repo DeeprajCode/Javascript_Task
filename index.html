@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Form</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+<h2>Add New Employee</h2>
+
+<form id="employeeForm" onsubmit="addEmployee(event)">
+  
+  <input type="text" id="name" placeholder="Enter Your Name"/>
+  <br>
+  <span class="error" id="nameError" style="color: red; font-size: 12px;"></span>
+
+  <br>
+
+  <input type="number"  id="salary" placeholder="Enter Your Salary"/>
+  <br>
+  <span class="error" id="salaryError" style="color: red; font-size: 12px;"></span>
+
+  <br>
+
+  <input type="text" id="department" placeholder="Enter Your Department"/>
+  <br>
+  <span class="error" id="departmentError" style="color: red; font-size: 12px;"></span>
+
+  <br><br>
+  <button type="submit">Add Employee</button>
+
+</form>
+
+
+
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search by name..." oninput="renderTable()" />
+
+    <!-- The oninput attribute is an HTML event attribute that triggers every time the value of an <input>, <textarea>, or <select> element changes — as the user types or changes input. -->
+    
+    <select id="sortSelect" onchange="renderTable()">
+      <option value="">Sort by Salary</option>
+      <option value="asc">Salary Ascending</option>
+      <option value="desc">Salary Descending</option>
+    </select>
+  </div>
+
+  <table>
+    <thead> 
+      <tr>
+        <th>Emp ID</th>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Department</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="employeeTableBody">
+      <!-- Rows inserted by JavaScript -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
