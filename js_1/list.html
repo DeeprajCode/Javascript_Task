@@ -7,32 +7,6 @@
   <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-<h2>Add New Employee</h2>
-
-<form id="employeeForm" onsubmit="addEmployee(event)">
-  
-  <input type="text" id="name" placeholder="Enter Your Name"/>
-  <br>
-  <span class="error" id="nameError" style="color: red; font-size: 12px;"></span>
-
-  <br>
-
-  <input type="number"  id="salary" placeholder="Enter Your Salary"/>
-  <br>
-  <span class="error" id="salaryError" style="color: red; font-size: 12px;"></span>
-
-  <br>
-
-  <input type="text" id="department" placeholder="Enter Your Department"/>
-  <br>
-  <span class="error" id="departmentError" style="color: red; font-size: 12px;"></span>
-
-  <br><br>
-  <button type="submit">Add Employee</button>
-
-</form>
-
-
 
 
   <div class="controls">
@@ -40,6 +14,8 @@
 
     <!-- The oninput attribute is an HTML event attribute that triggers every time the value of an <input>, <textarea>, or <select> element changes — as the user types or changes input. -->
     
+      <button onclick="location.href = 'form.html'" id="btn-addEmployee" >Add Employee</button>
+
     <select id="sortSelect" onchange="renderTable()">
       <option value="">Sort by Salary</option>
       <option value="asc">Salary Ascending</option>
@@ -62,6 +38,7 @@
     </tbody>
   </table>
 
-  <script src="script.js"></script>
+  <script src="list.js"></script>
+  <script src="addEmployee.js"></script>
 </body>
 </html>

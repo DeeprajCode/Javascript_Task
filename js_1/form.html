@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Add New Employee</h2>
+
+<form id="employeeForm" onsubmit="addEmployee(event)">
+  <div class="formEmployee">
+    <input type="text" id="name" placeholder="Enter Your Name"/>
+    
+    <span class="error" id="nameError"></span>
+
+    <br>
+
+    <input type="number"  id="salary" placeholder="Enter Your Salary"/>
+    
+    <span class="error" id="salaryError"></span>
+
+    <br>
+
+    <input type="text" id="department" placeholder="Enter Your Department"/>
+    
+    <span class="error" id="departmentError"></span>
+
+    <br><br>
+    <button type="submit" id="addEmployeeBtn">Add Employee</button>
+
+  </div>
+</form>
+
+</body>
+<script src="addEmployee.js"></script>
+</html>
