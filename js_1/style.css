@@ -7,6 +7,7 @@ body {
       background-size: 50%; */
       background : linear-gradient(135deg, rgb(128, 146, 252), rgb(34, 65, 245));
       color: white;
+      height: 573px;
     }
 
     h1 {

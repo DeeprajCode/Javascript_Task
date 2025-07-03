@@ -38,7 +38,7 @@ function addEmployee(event) {
     }
     if (hasError) return; 
 
-    // Save to sessionStorage
+    // Save to sessionStorage   
     const newEmployee = {
         name: name,
         salary: salary,
