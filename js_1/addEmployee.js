@@ -27,6 +27,9 @@ function addEmployee(event) {
     if (!name) {
         nameError.textContent = "Name is required.";
         hasError = true;
+    }else if(!/^[A-Za-z ]+$/.test(name)){
+        nameError.textContent = "Name must contain only Alphabetical Characters.";
+        hasError = true;
     }
     if (isNaN(salary) || salary <= 0) {
         salaryError.textContent = "Salary must be greater than 0.";
@@ -34,6 +37,9 @@ function addEmployee(event) {
     }
     if (!department) {
         departmentError.textContent = "Department is required.";
+        hasError = true;
+    }else if(!/^[A-Za-z ]+$/.test(department)){
+        departmentError.textContent = "Name must contain only Alphabetical Characters.";
         hasError = true;
     }
     if (hasError) return; 
