@@ -50,6 +50,6 @@ actionBtn.addEventListener("click", function(){
         otpError.textContent = "";
 
         alert("Login Successfully " + usernameInput.value);
-        window.location.href = "employeeList.html";
+        window.location.href = "/home/codezeros/Javascript_Task/js_1/list.html";
     }
 });
