@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login With OTP</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="password.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <img src="mobile-banking.png" id="logo">
+        <h1>OTP Generator</h1>
+        <form id="LoginForm">
+            <div class="form-group">
+                <input type="text" id="username" placeholder="Enter Your Username">
+                <span id="userError" class="error"></span>
+            </div>
+            <div class="form-group" id="otpGroup" style="display: none;">
+                <input type="text" id="otp" placeholder="Enter Your OTP" maxlength="4" required>
+                <span id="otpError" class="error"></span>
+            </div>
+            <button type="button" id="actionBtn">Send OTP</button>
+        </form>
+    </div>
+</body>
+<script src="login.js"></script>
+</html>
